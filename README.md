@@ -37,7 +37,7 @@ An automated Silo Monitoring System having the following features -
 
 ## Libraries Used
 
-- [`DHT11 Library`](https://codeload.github.com/adidax/dht11/legacy.zip/refs/heads/master)
+- [DHT11 Library](https://codeload.github.com/adidax/dht11/legacy.zip/refs/heads/master)
 - [LiquidCrystal Library](https://downloads.arduino.cc/libraries/github.com/arduino-libraries/LiquidCrystal-1.0.7.zip)
 
 ## Circuit Diagram
