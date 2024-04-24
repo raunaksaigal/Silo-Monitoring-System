@@ -5,7 +5,7 @@
 ---
 
 ## Contributors
->- [Sayan Das](geniussayan7@gmail.com)
+>- [Sayan Das](geniussayan7@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
 >- [Raunak Saigal](saigalraunak@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
 >- [Sagnik Sinha](sagniksinha.2004@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
 >- [Navonil Ganguli](navonilganguli@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
