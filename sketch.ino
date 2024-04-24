@@ -6,10 +6,9 @@
 #define echopin 6
 #define temppin 5
 
-int duration = 0 , distance = 0 , gas = 0 , health = 0 , flag = 0 , detected = 0 , resolved = 0 , check_print = 0;
-float humidity = 0 , temperature_outside = 35 , temperature_interval = 0 , temperature_inside = 0;
+int duration = 0 , distance = 0 , gas = 0 , health = 0 , flag = 0 , detected = 0 , resolved = 0 , check_print = 0  , value = 0;
+float humidity = 0 , c_temperature = 15 , temperature_interval = 0 , temperature_inside = 0 , full_storage = 180.0;
 String status;
-
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 dht11 DHT11;
@@ -35,16 +34,9 @@ void loop()
 
   duration = pulseIn(echopin , HIGH);
   distance = (duration * 0.343)/2;
-  
-
   int chk = DHT11.read(temppin);
-
-  
   humidity = (float)DHT11.humidity;
-
-  
   temperature_inside = (float)DHT11.temperature;
-
   gas = analogRead(gaspin);
   
 
@@ -61,33 +53,33 @@ void loop()
     Serial.print("\n");
   }
 
-  temperature_interval = temperature_outside - temperature_inside;
+  temperature_interval = temperature_inside - c_temperature;
+  value = ((full_storage - distance)/full_storage)*100;
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("Food Stored");
+  lcd.setCursor(0,1);
+  lcd.print(value);
+  lcd.print("%");
+  delay(2000);
 
-  if(distance < 100)
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("Temperature:");
+  lcd.print((int)temperature_inside);
+  lcd.print((char)223);
+  lcd.print("C");
+  if(temperature_interval > 0)
   {
-    lcd.clear();
-    lcd.setCursor(0,0);
-    lcd.print("WARNING");
     lcd.setCursor(0,1);
-    lcd.print("Storage Full");
-    delay(2000);
-    humidity = 9;
-    gas = 9;
-  }
-  if(temperature_interval < 10)
-  {
-    lcd.clear();
-    lcd.setCursor(0,0);
-    lcd.print("Temperature: ");
-    lcd.print((int)temperature_inside);
+    lcd.print("Lower by:");
+    lcd.print((int)temperature_interval);
     lcd.print((char)223);
-    lcd.setCursor(0,1);
-    lcd.print("Lower Temp by:");
-    lcd.print(abs((int)temperature_interval));
-    lcd.print((char)223);
-    delay(2000);
+    lcd.print("C");
   }
-  if(humidity > 10 || gas > 10)
+  delay(2000);
+
+  if(humidity > 65 || gas > 600)
   {
     health = 1;
     if(health == 1 && flag == 0)
@@ -113,15 +105,15 @@ void loop()
   }
 
   status = Serial.readString();
-  if(status != "status\n" && status != "done\n" && check_print == 1)
+  if(status != "status" && status != "done" && check_print == 1)
   {
-    status = "status\n";
+    status = "status";
   }
 
 
-  if(status == "status\n")
+  if(status == "status")
    {
-    Serial.print(status);
+    Serial.println(status);
     check_print = 1;
     if(detected == 0)
     {
@@ -143,9 +135,9 @@ void loop()
       Serial.print("\n");
     }
   }
-  else if(status == "done\n")
+  else if(status == "done")
   {
-    check_print = 0;
-  }
+    check_print = 0;
+  }
 
 }
