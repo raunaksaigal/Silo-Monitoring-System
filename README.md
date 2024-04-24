@@ -5,12 +5,12 @@
 ---
 
 ## Contributors
->- [Sayan Das](geniussayan7@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
->- [Raunak Saigal](saigalraunak@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
->- [Sagnik Sinha](sagniksinha.2004@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
->- [Navonil Ganguli](navonilganguli@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
->- [Shweta Dutta](sdmaze789@gmail.com)
->- [Ayaan Gopal Ray](ayaang.ray@gmail.com)
+>- [Sayan Das](mailto:geniussayan7@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
+>- [Raunak Saigal](mailto:saigalraunak@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
+>- [Sagnik Sinha](mailto:sagniksinha.2004@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
+>- [Navonil Ganguli](mailto:navonilganguli@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
+>- [Shweta Dutta](mailto:sdmaze789@gmail.com)
+>- [Ayaan Gopal Ray](mailto:ayaang.ray@gmail.com)
 
 ## Problems in the Industry
 
