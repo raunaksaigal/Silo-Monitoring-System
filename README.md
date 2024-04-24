@@ -27,13 +27,13 @@ An automated Silo Monitoring System having the following features -
 
 ## Harwares and Sensors used
 
-- Arduino Uno R3
-- DHT11 Temperature and Humidity sensor
-- MQ2 gas sensor
-- HC-SR04 ultrasonic sound sensor
-- HC-05 blutooth module
-- LCD Display
-- pcf8574 I2C Serial interface for LCD Display
+>- Arduino Uno R3
+>- DHT11 Temperature and Humidity sensor
+>- MQ2 gas sensor
+>- HC-SR04 ultrasonic sound sensor
+>- HC-05 blutooth module
+>- LCD Display
+>- pcf8574 I2C Serial interface for LCD Display
 
 ## Libraries Used
 
@@ -46,7 +46,8 @@ An automated Silo Monitoring System having the following features -
 
 ## Problems and Contributions
 
-The current solution does not employ and industrial approach but rather is a proof-of-concept as a hobby project. Anyone is more than welcome to contribute, add features, or use this code to implement new features in this code.
+The current solution does not employ and industrial approach but rather is a proof-of-concept as a hobby project. We tend to improve the user experience and 
+Anyone is more than welcome to contribute, add features, or use this code to implement new features in this code.
 
 
 
