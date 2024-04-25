@@ -42,7 +42,7 @@ An automated Silo Monitoring System having the following features -
 
 ## Circuit Diagram
 
-![Circuit Diagram](circuit_diagram.png)
+![Circuit Diagram](circuit_diagram.jpg)
 
 ## Problems and Contributions
 
