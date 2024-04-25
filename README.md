@@ -5,10 +5,10 @@
 ---
 
 ## Contributors
->- [Sayan Das](mailto:geniussayan7@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
->- [Raunak Saigal](mailto:saigalraunak@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
->- [Sagnik Sinha](mailto:sagniksinha.2004@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
->- [Navonil Ganguli](mailto:navonilganguli@gmail.com) ![](https://img.shields.io/badge/top_contributor-green)
+>- [Sayan Das](mailto:geniussayan7@gmail.com) 
+>- [Raunak Saigal](mailto:saigalraunak@gmail.com)
+>- [Sagnik Sinha](mailto:sagniksinha.2004@gmail.com) 
+>- [Navonil Ganguli](mailto:navonilganguli@gmail.com) 
 >- [Shweta Dutta](mailto:sdmaze789@gmail.com)
 >- [Ayaan Gopal Ray](mailto:ayaang.ray@gmail.com)
 
